@@ -1,0 +1,135 @@
+.content-container {
+	width: 100%;
+	height: auto;
+	background: $primary-color;
+	margin-top: 50px;
+
+	@media (max-width: $phone-max) {
+		margin-top: 30px;
+	}
+
+	h2 {
+		text-align: center;
+		color: white;
+		padding: 50px;
+
+		@media (max-width: $phone-max) {
+			padding: 30px;
+			margin-bottom: 0px;
+		}
+	}
+
+	.acc-container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding-bottom: 50px;
+		box-sizing: border-box;
+
+		@media (max-width: $phone-max) {
+			width: 100%;
+			padding: 0px 15px 30px 15px;
+		}
+
+		.acc {
+			margin-bottom: 30px;
+
+			@media (max-width: $phone-max) {
+				margin-bottom: 15px;
+			}
+
+			.acc-head {
+				background: #9842089e;
+				border-radius: 10px;
+				padding: 15px 75px 15px 25px;
+				font-size: 22px;
+				position: relative;
+				cursor: pointer;
+
+				@media (max-width: $phone-max) {
+					font-size: 22px;
+					position: relative;
+					cursor: pointer;
+				}
+
+				@media (max-width: $phone-small-max) {
+					font-size: 20px;
+				}
+			}
+		}
+		.acc-head::before,
+		.acc-head::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			background-color: $primary-text-color;
+			transition: all 0.3s;
+		}
+
+		.acc-head::before {
+			right: 30px;
+			width: 3px;
+			height: 20px;
+			margin-top: -10px;
+		}
+
+		.acc-head::after {
+			right: 21px;
+			width: 20px;
+			height: 3px;
+			margin-top: -2px;
+		}
+
+		.acc-head p {
+			font-size: 24px;
+			line-height: 33px;
+			color: white;
+			margin: 0 auto;
+			text-align: left;
+
+			@media (max-width: $phone-small-max) {
+				font-size: 18px;
+			}
+		}
+
+		.acc-content {
+			width: 93%;
+			height: auto;
+			margin: 0 auto;
+			padding: 20px;
+			font-size: 16px;
+			line-height: 22px;
+			color: $primary-text-color;
+			display: none;
+			background: #9842089e;
+			border-radius: 0px 0px 10px 10px;
+			text-align: left;
+
+			@media (max-width: $phone-max) {
+				width: 90%;
+			}
+			@media (max-width: $phone-medium-max) {
+				width: 85%;
+			}
+
+			@media (max-width: $phone-medium) {
+				width: 85%;
+			}
+
+			@media (max-width: $phone-small-max) {
+				width: 85%;
+			}
+
+			p {
+				text-align: left;
+			}
+			.distance {
+				margin-bottom: 15px;
+				text-align: left;
+			}
+		}
+
+		.acc-head.active::before {
+			transform: rotate(90deg);
+		}
+	}
+}

@@ -1,0 +1,154 @@
+.modal {
+	display: none;
+	vertical-align: middle;
+	position: relative;
+	z-index: 2;
+	max-width: 1000px;
+	height: auto;
+	box-sizing: border-box;
+	width: 90%;
+	background: #fff;
+	padding: 30px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	-ms-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0 0 10px #000;
+	-moz-box-shadow: 0 0 10px #000;
+	-o-box-shadow: 0 0 10px #000;
+	-ms-box-shadow: 0 0 10px #000;
+	box-shadow: 0 0 10px #000;
+	text-align: left;
+
+	@media (max-width: $phone-max) {
+		width: 100%;
+		height: auto;
+	}
+
+	p {
+		text-align: left;
+	}
+	.distance {
+		margin-bottom: 15px;
+		text-align: left;
+	}
+}
+
+.modal a.close-modal {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-indent: -9999px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: none;
+}
+
+.close-modal::before,
+.close-modal::after {
+	/* this is the 'X' arrow */
+	content: "";
+	position: absolute;
+	top: 15px;
+	left: 12px;
+	height: 2.06px;
+	width: 20.57px;
+	background: #c0392b;
+	border-radius: 2px;
+	transform: matrix(0.71, -0.71, 0.71, 0.71, 0, 0);
+}
+
+.close-modal::before {
+	transform: translate(-50%) rotate(45deg);
+}
+
+.close-modal::after {
+	transform: translate(-50%) rotate(-45deg);
+}
+
+#formName {
+	text-align: center;
+	color: #27ae60;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+	background: #c4c4c4;
+	align-items: center;
+	align-content: center;
+
+	.general-trotinete {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		gap: 15px;
+
+		.black {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+
+			.black-number {
+				font-size: 24px;
+				color: #000000;
+			}
+			.red-number {
+				font-size: 24px;
+				color: #c0392b;
+			}
+			.green-number {
+				font-size: 24px;
+				color: #1abc9c;
+			}
+			.blue-number {
+				font-size: 24px;
+				color: #2980b9;
+			}
+		}
+	}
+
+	.button1 {
+		font-family: $primary-font;
+		background: #1abc9c;
+		border-radius: 5px;
+		font-size: 16px;
+		line-height: 22px;
+		text-align: center;
+		color: #ffffff;
+		padding: 8px 24px 7px 24px;
+		text-transform: uppercase;
+		text-decoration: none;
+
+		box-sizing: border-box;
+		&:hover {
+			background-color: #2980b9;
+			color: #fff;
+		}
+	}
+	.button2 {
+		font-family: $primary-font;
+		background: #c0392b;
+		border-radius: 5px;
+		font-size: 16px;
+		line-height: 22px;
+		text-align: center;
+		color: #ffffff;
+		padding: 8px 24px 7px 24px;
+		text-transform: uppercase;
+		text-decoration: none;
+
+		box-sizing: border-box;
+		&:hover {
+			background-color: #2980b9;
+			color: #fff;
+		}
+	}
+}

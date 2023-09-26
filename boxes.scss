@@ -1,0 +1,159 @@
+.title {
+	h2 {
+		color: white;
+		margin-top: 50px;
+		margin-bottom: 50px;
+
+		@media (max-width: $phone-max) {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+	}
+}
+.all {
+	display: grid;
+	grid-template-columns: repeat(3, 2fr);
+	gap: 30px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+
+	@media (max-width: $phone-max) {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		margin-bottom: 30px;
+	}
+
+	.blue-box {
+		background-color: #d2edff4f;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+
+		img {
+			margin-bottom: 20px;
+		}
+	}
+
+	.new {
+		position: relative;
+		font-family: Open Sans, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 16px;
+		text-align: center;
+		color: #c0392b;
+	}
+	.new::after {
+		content: "NEW";
+		position: absolute;
+		color: #c0392b;
+		top: 10px;
+		right: 10px;
+	}
+}
+.container {
+	@media (max-width: $phone-max) {
+		position: relative;
+	}
+	.arrow-prev,
+	.arrow-next {
+		display: none;
+	}
+	.team-boxes {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		column-gap: 40px;
+		row-gap: 40px;
+
+		span {
+			display: none;
+		}
+
+		h2 {
+			margin: 0 auto;
+			color: $p-color;
+			margin-bottom: 50px;
+		}
+
+		img {
+			width: 270px;
+			height: auto;
+			border-radius: 200px;
+			margin-bottom: 20px;
+		}
+
+		.box {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			h5 {
+				font-size: 24px;
+				line-height: 33px;
+				text-align: center;
+				color: $secondary-button;
+				margin: 0 auto;
+				margin-bottom: 5px;
+			}
+
+			h6 {
+				font-size: 20px;
+				line-height: 27px;
+				font-weight: normal;
+				text-align: center;
+				color: green;
+				margin: 0 auto;
+				margin-bottom: 5px;
+			}
+
+			p {
+				font-size: 16px;
+				line-height: 22px;
+				text-align: center;
+				margin: 0 auto;
+				width: 270px;
+				height: auto;
+			}
+		}
+	}
+}
+
+@media (max-width: $laptop-max) {
+	.team-boxes-block {
+		position: relative;
+
+		.arrow-prev,
+		.arrow-next {
+			background: none;
+			border: none;
+			position: absolute;
+			cursor: pointer;
+			transform: scale(4);
+			top: 26%;
+			padding: 0;
+		}
+		.arrow-prev {
+			left: 0%;
+		}
+		.arrow-next {
+			right: 0%;
+		}
+	}
+}
+
+@media (max-width: $phone-max) {
+	.team-boxes-block {
+		.arrow-prev {
+			left: 0%;
+		}
+		.arrow-next {
+			right: 0%;
+		}
+	}
+}

@@ -1,0 +1,99 @@
+.title {
+	h1 {
+		text-align: center;
+		margin-top: 50px;
+		font-weight: normal;
+
+		@media (max-width: $tablet-max) {
+			font-size: 26px;
+			line-height: 35px;
+			font-weight: normal;
+			margin-top: 30px;
+			margin-bottom: 40px;
+		}
+	}
+}
+
+.change {
+	width: 800px;
+	min-height: 400px;
+	height: auto;
+	background: #98e6d653;
+	border-radius: 0px 50px;
+	margin: 0 auto;
+	margin-top: 50px;
+	position: relative;
+	box-sizing: border-box;
+
+	@media (max-width: $tablet-max) {
+		width: 100%;
+		min-height: auto;
+	}
+
+	@media (max-width: $phone-max) {
+		min-height: auto;
+	}
+
+	.change-text {
+		padding-left: 100px;
+		padding-right: 100px;
+
+		@media (max-width: $tablet-max) {
+			padding-left: 102px;
+			padding-right: 36px;
+		}
+		@media (max-width: $phone-max) {
+			padding-left: 50px;
+		}
+
+		.text1 {
+			margin-top: 123px;
+
+			p {
+				text-align: left;
+
+				@media (max-width: $phone-max) {
+					font-size: 14px;
+				}
+			}
+
+			h5 {
+				font-size: 16px;
+				line-height: 22px;
+				text-align: left;
+				margin-top: 15px;
+				padding-bottom: 103px;
+			}
+		}
+	}
+
+	.up {
+		position: absolute;
+		width: 81px;
+		height: 71.44px;
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+		transform: matrix(-1, 0, 0, 1, 0, 0) s;
+		top: -10px;
+		left: -15px;
+
+		@media (max-width: $tablet-max) {
+			top: 0px;
+			left: 0px;
+			padding: 10px;
+		}
+	}
+
+	.down {
+		position: absolute;
+		width: 81px;
+		height: 71.44px;
+		right: -10px;
+		bottom: -10px;
+
+		@media (max-width: $tablet-max) {
+			right: 0px;
+			bottom: 0px;
+			padding: 10px;
+		}
+	}
+}

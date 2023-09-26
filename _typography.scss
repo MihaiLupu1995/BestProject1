@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+body {
+	color: $primary-text-color;
+	font-family: $primary-font;
+	background-color: rgba(0, 0, 0, 0.77) !important;
+	font-weight: normal;
+	line-height: 1.2;
+	overflow-x: hidden;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p,
+	a,
+	i,
+	em,
+	strong,
+	b {
+		font-family: $primary-font;
+		line-height: 1.2;
+		margin: 0;
+		padding: 0;
+		* {
+			font-size: inherit;
+			line-height: inherit;
+		}
+	}
+	p {
+		font-weight: normal;
+		font-size: 16px;
+		text-align: center;
+		color: $heading-color2;
+		@media (max-width: $phone-max) {
+			font-size: 16px;
+		}
+	}
+	h1 {
+		font-weight: normal;
+		font-size: 45px;
+		margin-bottom: 10px;
+		text-align: left;
+		color: $secondary-text-color;
+		@media (max-width: $phone-max) {
+			font-size: 25px;
+			font-weight: normal;
+		}
+	}
+	h2 {
+		font-weight: normal;
+		font-size: 30px;
+		line-height: 41px;
+		text-align: center;
+		color: $secondary-color;
+		margin-bottom: 20px;
+		@media (max-width: $phone-max) {
+			font-size: 26px;
+			line-height: 35px;
+		}
+	}
+	h3 {
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 33px;
+		color: white;
+		@media (max-width: $phone-max) {
+			font-size: 22px;
+			margin-bottom: 18px;
+		}
+	}
+	h4 {
+		font-weight: bold;
+		font-size: 26px;
+		margin-bottom: 22px;
+		@media (max-width: $phone-max) {
+			font-size: 20px;
+			margin-bottom: 16px;
+		}
+	}
+	h5 {
+		font-size: 24px;
+		line-height: 33px;
+		text-align: center;
+		color: $secondary-button;
+		margin: 0 auto;
+		margin-bottom: 5px;
+		@media (max-width: $phone-max) {
+			font-size: 22px;
+			line-height: 30px;
+			margin: 0 auto;
+			margin-bottom: 8px;
+		}
+	}
+	h6 {
+		font-size: 20px;
+		line-height: 27px;
+		font-weight: normal;
+		text-align: center;
+		color: $primary-text-color;
+		margin: 0 auto;
+		margin-bottom: 5px;
+		@media (max-width: $phone-max) {
+			font-size: 18px;
+			line-height: 25px;
+			margin-bottom: 5px;
+		}
+	}
+	ul,
+	ol {
+		font-family: "Roboto";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+
+		li {
+			margin-bottom: 4px;
+		}
+	}
+	ul {
+		list-style: disc inside;
+	}
+	ol {
+		list-style: decimal inside;
+	}
+	a {
+		color: $primary-color;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	strong,
+	b {
+		font-weight: bold;
+	}
+	em,
+	i {
+		font-style: italic;
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}

@@ -1,0 +1,39 @@
+.hero {
+	position: relative;
+	background: $primary-text-color;
+	.slick-dots {
+		bottom: 5px;
+	}
+
+	.slick-dots li button:before {
+		font-size: 16px;
+	}
+
+	.slick-dots li.slick-active button:before {
+		color: #22dfc5;
+	}
+
+	.img {
+		width: 100%;
+		height: auto;
+		opacity: 0.6;
+	}
+
+	.customContent {
+		width: 100%;
+		position: absolute;
+		left: 0px;
+		top: 50%;
+		transform: translate(0, -50%);
+
+		p {
+			line-height: 22px;
+			text-align: left;
+			color: #ffffff;
+
+			@media (max-width: $phone-max) {
+				font-size: 14px;
+			}
+		}
+	}
+}

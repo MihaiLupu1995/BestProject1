@@ -1,0 +1,112 @@
+.fixed-img {
+	@media (max-width: $phone-max) {
+		padding: 0px 15px 0px 15px;
+	}
+
+	.img-fix {
+		width: 100%;
+		height: 400px;
+		background-image: url(../img/Diamant-pictura-animal-lup-diamant-broderie-pentru.jpg);
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom: 50px;
+
+		@media (max-width: $tablet-max) {
+			width: 100%;
+			height: 414.94px;
+			background-attachment: scroll;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.img-left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: flex-start;
+	gap: 50px;
+
+	@media (max-width: $phone-max) {
+		flex-direction: column;
+		margin-bottom: 30px;
+		margin-top: 30px;
+		gap: 20px;
+	}
+
+	.scoter {
+		@media (max-width: $phone-max) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		h2 {
+			font-size: 30px;
+			line-height: 41px;
+			color: #d35400;
+			margin-bottom: 20px;
+			text-align: left;
+		}
+
+		p {
+			line-height: 22px;
+			text-align: left;
+		}
+	}
+	img {
+		width: 575px;
+		height: 500px;
+
+		@media (max-width: $phone-max) {
+			width: 738px;
+			height: auto;
+		}
+	}
+}
+.img-right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: flex-start;
+	gap: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+	@media (max-width: $phone-max) {
+		flex-direction: column-reverse;
+		gap: 20px;
+		margin-bottom: 0px;
+		margin-top: 30px;
+	}
+
+	.nice {
+		h2 {
+			color: #d35400;
+			margin-bottom: 20px;
+			text-align: right;
+
+			@media (max-width: $phone-max) {
+				text-align: left;
+			}
+		}
+
+		p {
+			text-align: right;
+
+			@media (max-width: $phone-max) {
+				text-align: left;
+			}
+		}
+	}
+	img {
+		width: 575px;
+		height: 500px;
+
+		@media (max-width: $phone-max) {
+			width: 738px;
+			height: auto;
+		}
+	}
+}

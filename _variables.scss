@@ -1,0 +1,29 @@
+// colors
+$container-color: rgba(0, 0, 0, 0.769);
+$heading-color1: #27ae60;
+$heading-color2: #ffffff;
+$button-color1: #1abc9c;
+$button-color2: #42a9eeed;
+$body-color: #e5e5e5;
+$p-color: #000000;
+$a-color: #000000;
+$primary-color: $container-color;
+$secondary-color: $heading-color1;
+$primary-text-color: $p-color;
+$secondary-text-color: $heading-color2;
+$primary-button: $button-color1;
+$secondary-button: $button-color2;
+
+// fonts
+$primary-font: "Open Sans", sans-serif;
+$secondary-font: "MyWebFont", sans-serif;
+// sizes
+$container: 1200px;
+$container-laptop: 1000px;
+$container-tablet: 750px;
+$laptop-max: 1367px;
+$tablet-max: 1024px;
+$phone-max: 768px;
+$phone-medium-max: 500px;
+$phone-medium: 400px;
+$phone-small-max: 320px;
